@@ -1,0 +1,22 @@
+// Include child structs
+#include "controller/test_controller_inenc_file.h"
+#include "controller/test_controller_enc_file.h"
+#include "controller/test_controller_enchid_file.h"
+#include "controller/test_controller_hidhid_file.h"
+#include "controller/test_controller_hid_file.h"
+#include "controller/test_controller_attout_file.h"
+#include "controller/test_controller_hidhid2_file.h"
+#include "controller/test_controller_hid2hid2_file.h"
+#include "controller/test_controller_hid2_file.h"
+#include "controller/test_controller_hid2out_file.h"
+#include "controller/test_controller_li_out_file.h"
+#include "../runtime/NetworkController.h"
+
+
+char att_net[] = "$att_name";
+char control_net[] = "$control_name";
+
+// insize, encsize, hidsize, hid2size, outsize, type
+// net configs; inenc, enc, enchid, hidhid, hid, attout, hidhid2, hid2hid2, hid2, hidout
+// output decay; tauout
+NetworkControllerConf const conf = {$input_size, $encoding_size, $hidden_size, $hidden2_size, $output_size, $type, &conf_inenc, &conf_enc, &conf_enchid, &conf_hidhid, &conf_hid, &conf_attout, &conf_hidhid2, &conf_hid2hid2, &conf_hid2, &conf_hid2out, conf_controller_li_out};

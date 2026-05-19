@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "espikify"
+version = "0.1.0"
+description = "Convert PyTorch SNN attitude/control models into ESP32-ready C headers and runtime files"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Rim El Filali" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.0",
+  "wandb>=0.16"
+]
+
+[project.urls]
+Homepage = "https://github.com/NEAR-the-future/Espikify"
+Repository = "https://github.com/NEAR-the-future/Espikify"
+
+[project.scripts]
+espikify = "espikify.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+espikify = [
+  "templates/*.templ",
+  "runtimes/optimized/*",
+  "runtimes/event_driven/*"
+]

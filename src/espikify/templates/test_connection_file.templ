@@ -1,0 +1,8 @@
+#include "../runtime/functional.h"
+#include "../runtime/Connection.h"
+  
+// Weights
+float const w_${name}[] = $weights;
+
+// post, pre, w
+ConnectionConf const conf_${name} = {$input_size, $output_size, w_${name}};

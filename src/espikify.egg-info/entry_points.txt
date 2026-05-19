@@ -1,0 +1,2 @@
+[console_scripts]
+espikify = espikify.cli:main
