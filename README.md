@@ -131,15 +131,4 @@ Espikify stands on the shoulders of giants. We are grateful to these projects an
 
 Contributions and issue reports are welcome.
 
-## Citation
 
-If you use Espikify in your research, please cite:
-
-```latex
-@article{es,
-  title={Neuromorphic Flight Control of a Flapping-Wing Robot on Resource-Constrained Hardware},
-  author={El Filali, Rim and Feng, Chenrui and Gu, Weibin},
-  journal={arXiv preprint arXiv:2503.10118},
-  year={2026}
-}
-```
